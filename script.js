@@ -1,5 +1,4 @@
 document.body.addEventListener('keyup', (event)=>{
-    alert(event.code.toLowerCase())
     playSound(event.code.toLowerCase());
 })
 document.querySelector('.composer button').addEventListener('click', () => {
@@ -13,6 +12,10 @@ document.querySelector('.composer button').addEventListener('click', () => {
         playComposition(songArray, songLoop);
     }
 
+})
+document.body.addEventListener('touchend', (event)=>{
+    let tecla = event.target.getAttribute('data-key');
+    playSound(tecla.toLowerCase());
 })
 
 var slider = document.getElementById("timeSlider");
