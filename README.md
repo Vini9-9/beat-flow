@@ -1,4 +1,5 @@
 # beat-flow
+Gerador de beat
 
 ## Objetivo:
 * Poder produzir seu beat de forma simples
